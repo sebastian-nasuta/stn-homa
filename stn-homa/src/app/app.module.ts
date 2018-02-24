@@ -6,6 +6,7 @@ import { LayoutModule } from './layout/layout.module';
 import { routes } from './app.router';
 import { DocumentsModule } from './documents/documents.module';
 import { SpecificationsModule } from './specifications/specifications.module';
+import { CostsModule } from './costs/costs.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SpecificationsModule } from './specifications/specifications.module';
     RouterModule.forRoot(routes),
     LayoutModule,
     DocumentsModule,
-    SpecificationsModule
+    SpecificationsModule,
+    CostsModule
   ],
   providers: [],
   bootstrap: [MainComponent]
