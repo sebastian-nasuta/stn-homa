@@ -7,7 +7,7 @@ export class Cost {
         public number: number,
         public zipCode: number,
         public city: string,
-        public date: number,
+        public date: Date,
         public mileage: number,
         public price: number,
         public comment: string
