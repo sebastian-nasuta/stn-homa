@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   author: string;
 
   ngOnInit() {
-    this.year = new Date().getFullYear();
+    this.year = 2018;
     this.author = 'Sebastian Tomasz Nasuta';
   }
 
