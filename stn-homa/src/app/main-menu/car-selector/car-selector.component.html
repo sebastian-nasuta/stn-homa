@@ -1,0 +1,5 @@
+<form [formGroup]="carSelect">
+  <select [formControl]="carSelect.controls['name']">
+    <option *ngFor="let car of cars" [value]="model">{{car.model}}</option>
+  </select>
+</form>

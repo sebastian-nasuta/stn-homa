@@ -5,8 +5,9 @@ import { MainComponent } from './main/main.component';
 import { LayoutModule } from './layout/layout.module';
 import { routes } from './app.router';
 import { DocumentsModule } from './documents/documents.module';
-import { SpecificationsModule } from './specifications/specifications.module';
+import { CarSpecificationsModule } from './car-specifications/car-specifications.module';
 import { CostsModule } from './costs/costs.module';
+import { MainMenuModule } from './main-menu/main-menu.module';
 
 
 @NgModule({
@@ -18,8 +19,9 @@ import { CostsModule } from './costs/costs.module';
     RouterModule.forRoot(routes),
     LayoutModule,
     DocumentsModule,
-    SpecificationsModule,
-    CostsModule
+    CarSpecificationsModule,
+    CostsModule,
+    MainMenuModule
   ],
   providers: [],
   bootstrap: [MainComponent]
