@@ -1,0 +1,10 @@
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\bin\Debug\netcoreapp2.0\Stn.Homa.WebApi.deps.json
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\bin\Debug\netcoreapp2.0\Stn.Homa.WebApi.runtimeconfig.json
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\bin\Debug\netcoreapp2.0\Stn.Homa.WebApi.runtimeconfig.dev.json
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\bin\Debug\netcoreapp2.0\Stn.Homa.WebApi.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\bin\Debug\netcoreapp2.0\Stn.Homa.WebApi.pdb
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\obj\Debug\netcoreapp2.0\Stn.Homa.WebApi.csproj.CoreCompileInputs.cache
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\obj\Debug\netcoreapp2.0\Stn.Homa.WebApi.AssemblyInfoInputs.cache
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\obj\Debug\netcoreapp2.0\Stn.Homa.WebApi.AssemblyInfo.cs
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\obj\Debug\netcoreapp2.0\Stn.Homa.WebApi.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.WebApi\obj\Debug\netcoreapp2.0\Stn.Homa.WebApi.pdb
