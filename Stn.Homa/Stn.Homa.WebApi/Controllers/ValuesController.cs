@@ -1,19 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Stn.Homa.Fleet.Api.Services;
 
 namespace Stn.Homa.WebApi.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        private readonly IValuesService valuesService;
+
+        public ValuesController(IValuesService valuesService)
+        {
+            this.valuesService = valuesService;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return valuesService.GetAll();
         }
 
         // GET api/values/5

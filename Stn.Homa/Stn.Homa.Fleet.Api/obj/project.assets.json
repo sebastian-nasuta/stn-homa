@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj",
-      "projectName": "Stn.Homa.Ef",
-      "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj",
+      "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj",
+      "projectName": "Stn.Homa.Fleet.Api",
+      "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj",
       "packagesPath": "C:\\Users\\S\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\obj\\",
+      "outputPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

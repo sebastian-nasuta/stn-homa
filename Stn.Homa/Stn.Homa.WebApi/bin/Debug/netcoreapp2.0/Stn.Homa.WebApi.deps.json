@@ -24,7 +24,10 @@
       "Stn.Homa.WebApi/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "Stn.Homa.Ef": "1.0.0",
+          "Stn.Homa.Fleet.Api": "1.0.0",
+          "Stn.Homa.Fleet.Services": "1.0.0"
         },
         "runtime": {
           "Stn.Homa.WebApi.dll": {}
@@ -3794,6 +3797,33 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Stn.Homa.Ef/1.0.0": {
+        "runtime": {
+          "Stn.Homa.Ef.dll": {}
+        },
+        "compile": {
+          "Stn.Homa.Ef.dll": {}
+        }
+      },
+      "Stn.Homa.Fleet.Api/1.0.0": {
+        "runtime": {
+          "Stn.Homa.Fleet.Api.dll": {}
+        },
+        "compile": {
+          "Stn.Homa.Fleet.Api.dll": {}
+        }
+      },
+      "Stn.Homa.Fleet.Services/1.0.0": {
+        "dependencies": {
+          "Stn.Homa.Fleet.Api": "1.0.0"
+        },
+        "runtime": {
+          "Stn.Homa.Fleet.Services.dll": {}
+        },
+        "compile": {
+          "Stn.Homa.Fleet.Services.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -5979,6 +6009,21 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "Stn.Homa.Ef/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stn.Homa.Fleet.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stn.Homa.Fleet.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.NETCore.App/2.0.0": {
       "type": "package",

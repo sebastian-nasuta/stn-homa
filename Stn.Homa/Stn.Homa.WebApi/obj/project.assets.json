@@ -4746,6 +4746,39 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Stn.Homa.Ef/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Stn.Homa.Ef.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stn.Homa.Ef.dll": {}
+        }
+      },
+      "Stn.Homa.Fleet.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Stn.Homa.Fleet.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stn.Homa.Fleet.Api.dll": {}
+        }
+      },
+      "Stn.Homa.Fleet.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Stn.Homa.Fleet.Api": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stn.Homa.Fleet.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stn.Homa.Fleet.Services.dll": {}
+        }
       }
     }
   },
@@ -12526,12 +12559,30 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Stn.Homa.Ef/1.0.0": {
+      "type": "project",
+      "path": "../Stn.Homa.Ef/Stn.Homa.Ef.csproj",
+      "msbuildProject": "../Stn.Homa.Ef/Stn.Homa.Ef.csproj"
+    },
+    "Stn.Homa.Fleet.Api/1.0.0": {
+      "type": "project",
+      "path": "../Stn.Homa.Fleet.Api/Stn.Homa.Fleet.Api.csproj",
+      "msbuildProject": "../Stn.Homa.Fleet.Api/Stn.Homa.Fleet.Api.csproj"
+    },
+    "Stn.Homa.Fleet.Services/1.0.0": {
+      "type": "project",
+      "path": "../Stn.Homa.Fleet.Services/Stn.Homa.Fleet.Services.csproj",
+      "msbuildProject": "../Stn.Homa.Fleet.Services/Stn.Homa.Fleet.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Stn.Homa.Ef >= 1.0.0",
+      "Stn.Homa.Fleet.Api >= 1.0.0",
+      "Stn.Homa.Fleet.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12540,9 +12591,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.WebApi\\Stn.Homa.WebApi.csproj",
       "projectName": "Stn.Homa.WebApi",
@@ -12566,7 +12614,17 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj"
+            },
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj"
+            },
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12578,14 +12636,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "2.0.5"
+            "version": "[2.0.5, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

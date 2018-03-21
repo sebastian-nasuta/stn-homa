@@ -1,0 +1,11 @@
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Fleet.Services.deps.json
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Fleet.Services.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Fleet.Services.pdb
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Fleet.Api.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Fleet.Api.pdb
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.csprojResolveAssemblyReference.cache
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.csproj.CoreCompileInputs.cache
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.AssemblyInfoInputs.cache
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.AssemblyInfo.cs
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.pdb

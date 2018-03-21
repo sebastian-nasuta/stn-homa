@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Stn.Homa.Fleet.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Stn.Homa.Fleet.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stn.Homa.Fleet.Api.dll": {}
+        }
       }
     }
   },
@@ -169,11 +179,17 @@
         "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Stn.Homa.Fleet.Api/1.0.0": {
+      "type": "project",
+      "path": "../Stn.Homa.Fleet.Api/Stn.Homa.Fleet.Api.csproj",
+      "msbuildProject": "../Stn.Homa.Fleet.Api/Stn.Homa.Fleet.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.1"
+      "NETStandard.Library >= 2.0.1",
+      "Stn.Homa.Fleet.Api >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -183,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj",
-      "projectName": "Stn.Homa.Ef",
-      "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj",
+      "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj",
+      "projectName": "Stn.Homa.Fleet.Services",
+      "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj",
       "packagesPath": "C:\\Users\\S\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\obj\\",
+      "outputPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -205,7 +221,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

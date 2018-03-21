@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stn.Homa.WebApi", "Stn.Homa.WebApi\Stn.Homa.WebApi.csproj", "{5D3267C3-A691-431B-9210-EED73C5E44AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stn.Homa.WebApi", "Stn.Homa.WebApi\Stn.Homa.WebApi.csproj", "{5D3267C3-A691-431B-9210-EED73C5E44AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stn.Homa.Ef", "Stn.Homa.Ef\Stn.Homa.Ef.csproj", "{402CFF28-F9A6-4F68-A681-65864C11EA48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stn.Homa.Ef", "Stn.Homa.Ef\Stn.Homa.Ef.csproj", "{B920ECC6-F952-4AED-A675-B85D50BC2C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stn.Homa.Fleet.Api", "Stn.Homa.Fleet.Api\Stn.Homa.Fleet.Api.csproj", "{24AA211A-5DD3-4597-97EF-21CD30113A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stn.Homa.Fleet.Services", "Stn.Homa.Fleet.Services\Stn.Homa.Fleet.Services.csproj", "{909BF9FD-B575-430E-BE7D-D67FFEDEDE46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{5D3267C3-A691-431B-9210-EED73C5E44AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D3267C3-A691-431B-9210-EED73C5E44AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D3267C3-A691-431B-9210-EED73C5E44AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{402CFF28-F9A6-4F68-A681-65864C11EA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{402CFF28-F9A6-4F68-A681-65864C11EA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{402CFF28-F9A6-4F68-A681-65864C11EA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{402CFF28-F9A6-4F68-A681-65864C11EA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B920ECC6-F952-4AED-A675-B85D50BC2C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B920ECC6-F952-4AED-A675-B85D50BC2C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B920ECC6-F952-4AED-A675-B85D50BC2C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B920ECC6-F952-4AED-A675-B85D50BC2C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AA211A-5DD3-4597-97EF-21CD30113A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AA211A-5DD3-4597-97EF-21CD30113A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AA211A-5DD3-4597-97EF-21CD30113A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AA211A-5DD3-4597-97EF-21CD30113A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909BF9FD-B575-430E-BE7D-D67FFEDEDE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909BF9FD-B575-430E-BE7D-D67FFEDEDE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909BF9FD-B575-430E-BE7D-D67FFEDEDE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909BF9FD-B575-430E-BE7D-D67FFEDEDE46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
