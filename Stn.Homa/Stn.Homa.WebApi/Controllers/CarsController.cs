@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Stn.Homa.Fleet.Api.Services;
 using Stn.Homa.Fleet.Api.Entities;
+using System.Linq;
 
 namespace Stn.Homa.WebApi.Controllers
 {
@@ -17,13 +18,13 @@ namespace Stn.Homa.WebApi.Controllers
 
         // GET api/cars
         [HttpGet]
-        public IEnumerable<Car> GetCarNames()
+        public IEnumerable<string> GetCarNames()
         {
-            return carsService.GetAll();
+            return carsService.GetAll().Select(item => item.Name);
         }
 
         // GET api/cars/5
-        [HttpGet("{id}")]
+        [HttpGet("{name}")]
         public Car Get(string name)
         {
             return carsService.Get(name);

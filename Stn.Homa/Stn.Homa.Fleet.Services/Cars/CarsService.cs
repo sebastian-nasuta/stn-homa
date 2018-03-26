@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Stn.Homa.Fleet.Api.Entities;
+using System.Linq;
 
 namespace Stn.Homa.Fleet.Services.Cars
 {
@@ -18,12 +19,12 @@ namespace Stn.Homa.Fleet.Services.Cars
 
         public Car Get(string name)
         {
-            throw new NotImplementedException("GET CAR !!!");
+            return _dbContext.Cars.First(item => item.Name == name);
         }
 
         public IEnumerable<Car> GetAll()
         {
-            throw new NotImplementedException("GET ALL CARS !!!");
+            return _dbContext.Cars;
         }
     }
 }

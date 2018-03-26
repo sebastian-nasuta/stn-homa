@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stn.Homa.Fleet.Api.Entities
+﻿namespace Stn.Homa.Fleet.Api.Entities
 {
     public class Car
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public int ModelId { get; set; }
 
         public string Type { get; set; }
 
-        public float Year { get; set; }
+        public double Year { get; set; }
 
         public string Vin { get; set; }
 
-        public float MaxPower { get; set; }
+        public double? MaxPower { get; set; }
 
-        public float MaxTorque { get; set; }
+        public double? MaxTorque { get; set; }
     }
 }
