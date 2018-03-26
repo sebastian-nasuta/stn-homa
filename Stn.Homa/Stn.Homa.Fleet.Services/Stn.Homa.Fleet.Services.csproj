@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Stn.Homa.Ef\Stn.Homa.Ef.csproj" />
     <ProjectReference Include="..\Stn.Homa.Fleet.Api\Stn.Homa.Fleet.Api.csproj" />
   </ItemGroup>
 

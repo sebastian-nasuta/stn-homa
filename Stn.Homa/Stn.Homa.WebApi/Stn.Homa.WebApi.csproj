@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +17,10 @@
     <ProjectReference Include="..\Stn.Homa.Ef\Stn.Homa.Ef.csproj" />
     <ProjectReference Include="..\Stn.Homa.Fleet.Api\Stn.Homa.Fleet.Api.csproj" />
     <ProjectReference Include="..\Stn.Homa.Fleet.Services\Stn.Homa.Fleet.Services.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
   </ItemGroup>
 
 </Project>

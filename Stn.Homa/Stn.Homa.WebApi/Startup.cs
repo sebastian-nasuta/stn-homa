@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Stn.Homa.Ef;
 using Stn.Homa.Fleet.Api.Services;
+using Stn.Homa.Fleet.Services.CarModels;
+using Stn.Homa.Fleet.Services.Cars;
 using Stn.Homa.Fleet.Services.Temp;
 
 namespace Stn.Homa.WebApi
@@ -22,11 +24,13 @@ namespace Stn.Homa.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<HomaDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("PzpnDatabase")));
+                options.UseSqlServer(Configuration.GetConnectionString("HomaDatabase")));
 
             services.AddMvc();
 
             services.AddTransient<IValuesService, ValuesService>();
+            services.AddTransient<ICarModelsService, CarModelsService>();
+            services.AddTransient<ICarsService, CarsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

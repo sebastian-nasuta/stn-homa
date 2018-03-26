@@ -9,3 +9,5 @@ E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\S
 E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.AssemblyInfo.cs
 E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.dll
 E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\obj\Debug\netstandard2.0\Stn.Homa.Fleet.Services.pdb
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Ef.dll
+E:\Projects\stn-homa\Stn.Homa\Stn.Homa.Fleet.Services\bin\Debug\netstandard2.0\Stn.Homa.Ef.pdb
