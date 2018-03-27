@@ -14,6 +14,7 @@ export class ParametersListComponent implements OnInit {
 
   ngOnInit() {
     this.cars = this.carService.cars;
+    this.carService.loadCars();
   }
 
 }
