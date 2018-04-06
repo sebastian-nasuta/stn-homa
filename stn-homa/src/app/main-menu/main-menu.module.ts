@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from '../app.router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarSelectorComponent } from './car-selector/car-selector.component';
+import { BrandLogoComponent } from './brand-logo/brand-logo.component';
 
 @NgModule({
   imports: [
@@ -15,10 +16,12 @@ import { CarSelectorComponent } from './car-selector/car-selector.component';
   declarations: [
     SectionsListComponent,
     CarSelectorComponent,
+    BrandLogoComponent,
   ],
   exports: [
     SectionsListComponent,
-    CarSelectorComponent
+    CarSelectorComponent,
+    BrandLogoComponent
   ]
 })
 export class MainMenuModule { }

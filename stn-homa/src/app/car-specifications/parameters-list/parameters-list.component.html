@@ -1,5 +1,5 @@
-<div>
-    <table class="table table-responsive" *ngFor="let item of car">
+<div *ngFor="let item of car">
+    <table class="table table-responsive">
         <tbody *ngIf="item">
             <tr>
                 <th>Brand</th>
@@ -28,3 +28,5 @@
         </tbody>
     </table>
 </div>
+
+<div *ngIf="car.length===0">Please select car</div>

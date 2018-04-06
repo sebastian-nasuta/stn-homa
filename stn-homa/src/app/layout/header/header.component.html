@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="assets/car-logos/vw.ico" width="30" height="30" class="d-inline-block align-top" alt="">
-  </a>
-  <div>
-    <ng-content select="[mainMenu]"></ng-content>
-  </div>
-  <div>
-    <ng-content select="[selector]"></ng-content>
+  <div class="container-fluid">
+    <div class="nav navbar-nav">
+        <ng-content select="[logo]"></ng-content>
+        <ng-content select="[mainMenu]"></ng-content>
+    </div>
+    <div>
+      <ng-content select="[selector]"></ng-content>
+    </div>
   </div>
 </nav>

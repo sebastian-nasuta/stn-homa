@@ -30,6 +30,8 @@ export class CarService {
   setName(name: string) {
     this.selectedCar.length = 0;
     const item = this.cars.find(car => car.name === name);
-    this.selectedCar.push(item);
+    if (item) {
+      this.selectedCar.push(item);
+    }
   }
 }
