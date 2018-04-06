@@ -8,6 +8,7 @@ import { DocumentsModule } from './documents/documents.module';
 import { CarSpecificationsModule } from './car-specifications/car-specifications.module';
 import { CostsModule } from './costs/costs.module';
 import { MainMenuModule } from './main-menu/main-menu.module';
+import { CarService } from './domain/cars/car.service';
 
 
 @NgModule({

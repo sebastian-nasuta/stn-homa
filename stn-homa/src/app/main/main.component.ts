@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarService } from '../domain/cars/car.service';
 
 @Component({
   selector: 'stn-main',

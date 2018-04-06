@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Car } from '../../domain/cars/car';
 import { FormGroup, FormControl } from '@angular/forms';
 import { CarService } from '../../domain/cars/car.service';
@@ -19,5 +19,10 @@ export class CarSelectorComponent implements OnInit {
       name: new FormControl('', [], [])
     });
     this.cars = this.carService.cars;
+  }
+
+  select() {
+    const carSelect = this.carSelect.value;
+    this.carService.setName(carSelect.name);
   }
 }

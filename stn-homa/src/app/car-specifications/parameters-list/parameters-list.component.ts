@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../../domain/cars/car';
 import { CarService } from '../../domain/cars/car.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'stn-parameters-list',
@@ -8,13 +9,13 @@ import { CarService } from '../../domain/cars/car.service';
   styleUrls: ['./parameters-list.component.css']
 })
 export class ParametersListComponent implements OnInit {
-  cars: Car[];
+  car: Car[];
 
-  constructor(private carService: CarService) { }
-
-  ngOnInit() {
-    this.cars = this.carService.cars;
-    this.carService.loadCars();
+  constructor(private carService: CarService) {
+    this.car = [];
   }
 
+  ngOnInit() {
+    this.car = this.carService.selectedCar;
+  }
 }

@@ -3,30 +3,33 @@ import { Car } from './car';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { element } from 'protractor';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class CarService {
   cars: Car[];
+  selectedCar: Car[];
 
   constructor(private http: Http) {
+    // this.cars = [new Car('test', 'test', 'test', 'test', 'test', 1, 1)];
     this.cars = [];
+    this.selectedCar = [];
+    this.loadCars();
   }
 
   loadCars() {
-    this.http.get('api/cars')
+    this.http.get(`api/cars`)
       .map(response => response.json())
       .subscribe(data => {
-        data.forEach(element => {
-          this.cars.push(element);
+        data.forEach(item => {
+          this.cars.push(item);
         });
       });
   }
 
-  // constructor() {
-  //   this.cars = [
-  //     new Car('Golf+', 'Volkswagen', 'Golf', 'Hatchback', 'golfvinnumber', 115, 155),
-  //     new Car('Almerka', 'Nissan', 'Almera', 'Hatchback', 'almeravinnumber', 120, 160)
-  //   ];
-  // }
-
+  setName(name: string) {
+    this.selectedCar.length = 0;
+    const item = this.cars.find(car => car.name === name);
+    this.selectedCar.push(item);
+  }
 }

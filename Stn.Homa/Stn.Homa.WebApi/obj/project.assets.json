@@ -13186,6 +13186,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.WebApi\\Stn.Homa.WebApi.csproj",
       "projectName": "Stn.Homa.WebApi",
@@ -13210,14 +13213,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj": {
-              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj"
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj"
             },
             "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj": {
               "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj"
             },
-            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj": {
-              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Services\\Stn.Homa.Fleet.Services.csproj"
+            "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj": {
+              "projectPath": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Ef\\Stn.Homa.Ef.csproj"
             }
           }
         }
@@ -13231,18 +13234,18 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.All": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[2.0.6, )"
+            "version": "2.0.3"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0",
             "autoReferenced": true
           },
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
-            "version": "[2.0.3, )"
+            "version": "2.0.6"
           }
         },
         "imports": [
