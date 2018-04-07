@@ -1,3 +1,9 @@
 <a class="navbar-brand" href="#">
-  <img src="assets/car-logos/vw.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+  <div *ngIf="car.length!==0">
+    <img src="assets/car-logos/{{item.brand.toLowerCase()}}.ico" width="30" height="30" class="d-inline-block align-top" alt=""
+      *ngFor="let item of car">
+  </div>
+  <div *ngIf="car.length===0">
+    <img src="assets/bow.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+  </div>
 </a>

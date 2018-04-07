@@ -11,10 +11,9 @@ export class CarService {
   selectedCar: Car[];
 
   constructor(private http: Http) {
-    // this.cars = [new Car('test', 'test', 'test', 'test', 'test', 1, 1)];
     this.cars = [];
-    this.selectedCar = [];
     this.loadCars();
+    this.selectedCar = [];
   }
 
   loadCars() {
