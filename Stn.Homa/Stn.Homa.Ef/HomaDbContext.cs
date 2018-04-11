@@ -9,6 +9,20 @@ namespace Stn.Homa.Ef
 
         public DbSet<CarModel> Models { get; set; }
 
+        public DbSet<Cost> Costs { get; set; }
+
+        public DbSet<Workshop> CarServices { get; set; }
+
+        public DbSet<City> Cities { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Workshop>()
+                .HasKey(w => w.Name);
+            modelBuilder.Entity<City>()
+                .HasKey(c => c.PostalCode);
+        }
+
         public HomaDbContext(DbContextOptions<HomaDbContext> options) 
             : base(options)
         {

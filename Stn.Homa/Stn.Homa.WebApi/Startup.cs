@@ -7,7 +7,10 @@ using Stn.Homa.Ef;
 using Stn.Homa.Fleet.Api.Services;
 using Stn.Homa.Fleet.Services.CarModels;
 using Stn.Homa.Fleet.Services.Cars;
+using Stn.Homa.Fleet.Services.Cities;
+using Stn.Homa.Fleet.Services.Costs;
 using Stn.Homa.Fleet.Services.Temp;
+using Stn.Homa.Fleet.Services.Workshops;
 
 namespace Stn.Homa.WebApi
 {
@@ -31,6 +34,9 @@ namespace Stn.Homa.WebApi
             services.AddTransient<IValuesService, ValuesService>();
             services.AddTransient<ICarModelsService, CarModelsService>();
             services.AddTransient<ICarsService, CarsService>();
+            services.AddTransient<ICostsService, CostsService>();
+            services.AddTransient<IWorkshopsService, WorkshopsService>();
+            services.AddTransient<ICitiesService, CitiesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ParametersListComponent } from './parameters-list/parameters-list.component';
 import { DomainModule } from '../domain/domain.module';
 import { CarSpecificationsSectionComponent } from './car-specifications-section/car-specifications-section.component';
+import { MainMenuModule } from '../main-menu/main-menu.module';
 
 @NgModule({
   imports: [

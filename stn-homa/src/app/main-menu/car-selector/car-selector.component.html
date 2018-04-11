@@ -1,4 +1,5 @@
 <form [formGroup]="carSelect">
+  <img src="assets/mustang/mustang.svg" width="30" height="30" class="d-inline-block align-top" alt="">
   <select [formControl]="carSelect.controls['name']" (click)="select()">
     <option [hidden]="name !== 'Select...'">Select...</option>
     <option *ngFor="let car of cars">{{car.name}}</option>

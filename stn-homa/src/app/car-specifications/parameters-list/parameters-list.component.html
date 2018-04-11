@@ -1,32 +1,36 @@
-<div *ngFor="let item of car">
+<div *ngIf="car.length!==0">
     <table class="table table-responsive">
-        <tbody *ngIf="item">
+        <tbody>
             <tr>
                 <th>Brand</th>
-                <td>{{item.brand}}</td>
+                <td>{{car[0].brand}}</td>
             </tr>
             <tr>
                 <th>Model</th>
-                <td>{{item.model}}</td>
+                <td>{{car[0].model}}</td>
             </tr>
             <tr>
                 <th>Type</th>
-                <td>{{item.type}}</td>
+                <td>{{car[0].type}}</td>
             </tr>
             <tr>
                 <th>VIN</th>
-                <td>{{item.vin}}</td>
+                <td>{{car[0].vin}}</td>
             </tr>
             <tr>
                 <th>Max power</th>
-                <td>{{item.maxPower}}</td>
+                <td>{{car[0].maxPower}}</td>
             </tr>
             <tr>
                 <th>Max torque</th>
-                <td>{{item.maxTorque}}</td>
+                <td>{{car[0].maxTorque}}</td>
             </tr>
         </tbody>
     </table>
 </div>
 
-<div *ngIf="car.length===0">Please select car</div>
+<div *ngIf="car.length===0">
+    <img src="assets/mustang/mustang.svg" width="300" class="d-inline-block align-top" alt="">
+    <div>Please select car in the upper right corner</div>
+</div>
+

@@ -8,16 +8,6 @@ namespace Stn.Homa.Fleet.Services.CarModels
 {
     public class CarModelsTestService : ICarModelsService
     {
-        public CarModel Get(int id)
-        {
-            return new CarModel
-            {
-                Id = id,
-                Brand = "VW",
-                Name = "Golf"
-            };
-        }
-
         public IEnumerable<CarModel> GetAll()
         {
             return new CarModel[] {

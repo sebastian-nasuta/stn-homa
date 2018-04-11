@@ -1,24 +1,25 @@
 ﻿using Stn.Homa.Fleet.Api.Services;
+using System;
 using System.Collections.Generic;
+using System.Text;
 using Stn.Homa.Fleet.Api.Entities;
 using Stn.Homa.Ef;
 using System.Linq;
-using System;
 
-namespace Stn.Homa.Fleet.Services.CarModels
+namespace Stn.Homa.Fleet.Services.Cities
 {
-    public class CarModelsService : ICarModelsService
+    public class CitiesService : ICitiesService
     {
         private readonly HomaDbContext _dbContext;
 
-        public CarModelsService(HomaDbContext dbContext)
+        public CitiesService(HomaDbContext dbContext)
         {
             _dbContext = dbContext;
         }
         
-        public IEnumerable<CarModel> GetAll()
+        IEnumerable<City> ICitiesService.GetAll()
         {
-            return _dbContext.Models;
+            return _dbContext.Cities;
         }
     }
 }

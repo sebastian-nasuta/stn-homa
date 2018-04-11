@@ -22,12 +22,5 @@ namespace Stn.Homa.WebApi.Controllers
             return carModelsService.GetAll();
         }
 
-        // GET api/carModels/5
-        [HttpGet("{id}")]
-        public CarModel Get(int id)
-        {
-            return carModelsService.Get(id);
-        }
-
     }
 }

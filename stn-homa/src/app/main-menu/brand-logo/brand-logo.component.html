@@ -1,9 +1,8 @@
 <a class="navbar-brand" href="#">
   <div *ngIf="car.length!==0">
-    <img src="assets/car-logos/{{item.brand.toLowerCase()}}.ico" width="30" height="30" class="d-inline-block align-top" alt=""
-      *ngFor="let item of car">
+    <img src="assets/car-logos/{{car[0].brand.toLowerCase()}}.ico" width="30" height="30" class="d-inline-block align-top" alt="">
   </div>
   <div *ngIf="car.length===0">
-    <img src="assets/bow.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="assets/mustang/mustang.svg" width="30" height="30" class="d-inline-block align-top" alt="">
   </div>
 </a>

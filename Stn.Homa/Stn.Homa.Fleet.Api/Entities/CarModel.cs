@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stn.Homa.Fleet.Api.Entities
+﻿namespace Stn.Homa.Fleet.Api.Entities
 {
     public class CarModel
     {

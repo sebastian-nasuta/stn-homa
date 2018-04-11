@@ -2,7 +2,7 @@ export class Cost {
     constructor(
         public id: number,
         public name: string,
-        public performer: string,
+        public workshop: string,
         public street: string,
         public number: number,
         public zipCode: number,
