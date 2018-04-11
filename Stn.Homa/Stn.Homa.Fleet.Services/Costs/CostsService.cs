@@ -17,9 +17,9 @@ namespace Stn.Homa.Fleet.Services.Costs
             _dbContext = dbContext;
         }
 
-        public Cost Get(int id)
+        public IEnumerable<Cost> Get(string name)
         {
-            return _dbContext.Costs.First(item => item.Id == id);
+            return _dbContext.Costs.Where(item => item.CarName == name);
         }
 
         public IEnumerable<Cost> GetAll()

@@ -7,7 +7,7 @@ namespace Stn.Homa.Fleet.Api.Entities
     {
         public int Id { get; set; }
 
-        public int CarId { get; set; }
+        public string CarName { get; set; }
 
         public string Name { get; set; }
 

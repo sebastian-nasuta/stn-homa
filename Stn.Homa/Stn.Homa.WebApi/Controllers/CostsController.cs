@@ -29,12 +29,11 @@ namespace Stn.Homa.WebApi.Controllers
             return _costsService.GetAll().Select(item => CostProjections.ToSummary(item, _workshopsService.GetAll(), _citiesService.GetAll()));
         }
 
-        // GET api/costs/5
-        [HttpGet("{id}")]
-        public CostSummaryDto Get(int id)
+        // GET api/costs/Almerka
+        [HttpGet("{carName}")]
+        public IEnumerable<CostSummaryDto> Get(string carName)
         {
-            return CostProjections.ToSummary(_costsService.Get(id), _workshopsService.GetAll(), _citiesService.GetAll());
+            return _costsService.Get(carName).Select(item => CostProjections.ToSummary(item, _workshopsService.GetAll(), _citiesService.GetAll()));
         }
-
     }
 }

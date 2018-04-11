@@ -8,6 +8,6 @@ namespace Stn.Homa.Fleet.Api.Services
     public interface ICostsService
     {
         IEnumerable<Cost> GetAll();
-        Cost Get(int id);
+        IEnumerable<Cost> Get(string name);
     }
 }

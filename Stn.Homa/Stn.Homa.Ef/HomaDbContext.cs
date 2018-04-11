@@ -17,6 +17,8 @@ namespace Stn.Homa.Ef
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Car>()
+                .HasKey(c => c.Name);
             modelBuilder.Entity<Workshop>()
                 .HasKey(w => w.Name);
             modelBuilder.Entity<City>()
