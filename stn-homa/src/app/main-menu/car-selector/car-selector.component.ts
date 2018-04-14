@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Car } from '../../domain/cars/car';
 import { FormGroup, FormControl } from '@angular/forms';
 import { CarService } from '../../domain/cars/car.service';
+import { CostService } from '../../domain/costs/cost.service';
 
 @Component({
   selector: 'stn-car-selector',
@@ -9,20 +10,24 @@ import { CarService } from '../../domain/cars/car.service';
   styleUrls: ['./car-selector.component.css']
 })
 export class CarSelectorComponent implements OnInit {
-  cars: Car[];
+  carNames: string[];
   carSelect: FormGroup;
 
-  constructor(private carService: CarService) { }
+  constructor(private carService: CarService, private costService: CostService) { }
 
   ngOnInit() {
     this.carSelect = new FormGroup({
       name: new FormControl('', [], [])
     });
-    this.cars = this.carService.cars;
+    this.carNames = this.carService.carNames;
   }
 
   select() {
-    const carSelect = this.carSelect.value;
-    this.carService.setName(carSelect.name);
+    const name = this.carSelect.value.name;
+
+    if (name) {
+      this.carService.setName(name);
+      this.costService.loadCosts(name);
+    }
   }
 }

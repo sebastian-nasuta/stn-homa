@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Stn.Homa.Fleet.Api.Services;
-using Stn.Homa.Fleet.Api.Entities;
 using Stn.Homa.Fleet.Api.Dtos;
 using System.Linq;
 using Stn.Homa.Fleet.Api.Projections;
@@ -24,13 +23,6 @@ namespace Stn.Homa.WebApi.Controllers
 
         // GET api/costs
         [HttpGet]
-        public IEnumerable<CostSummaryDto> Get()
-        {
-            return _costsService.GetAll().Select(item => CostProjections.ToSummary(item, _workshopsService.GetAll(), _citiesService.GetAll()));
-        }
-
-        // GET api/costs/Almerka
-        [HttpGet("{carName}")]
         public IEnumerable<CostSummaryDto> Get(string carName)
         {
             return _costsService.Get(carName).Select(item => CostProjections.ToSummary(item, _workshopsService.GetAll(), _citiesService.GetAll()));

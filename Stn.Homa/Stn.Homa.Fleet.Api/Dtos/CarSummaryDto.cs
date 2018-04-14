@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Stn.Homa.Fleet.Api.Dtos
+﻿namespace Stn.Homa.Fleet.Api.Dtos
 {
     public class CarSummaryDto
     {

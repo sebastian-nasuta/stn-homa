@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using Stn.Homa.Fleet.Api.Entities;
 using Stn.Homa.Ef;
-using System.Linq;
-using System;
 
 namespace Stn.Homa.Fleet.Services.CarModels
 {

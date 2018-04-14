@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Stn.Homa.Fleet.Api.Dtos
 {
@@ -10,15 +8,15 @@ namespace Stn.Homa.Fleet.Api.Dtos
 
         public string Name { get; set; }
 
-        public string WorkshopName { get; set; }
+        public string Workshop { get; set; }
 
         public string Street { get; set; }
 
-        public int? HouseNumber { get; set; }
+        public int? Number { get; set; }
 
-        public int? PostalCode { get; set; }
+        public int? ZipCode { get; set; }
 
-        public string CityName { get; set; }
+        public string City { get; set; }
 
         public DateTime Date { get; set; }
 

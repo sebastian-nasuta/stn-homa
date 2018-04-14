@@ -1,9 +1,7 @@
 ﻿using Stn.Homa.Fleet.Api.Dtos;
 using Stn.Homa.Fleet.Api.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Stn.Homa.Fleet.Api.Projections
 {
@@ -20,11 +18,11 @@ namespace Stn.Homa.Fleet.Api.Projections
                 {
                     Id = cost.Id,
                     Name = cost.Name,
-                    WorkshopName = cost.WorkshopName,
+                    Workshop = cost.WorkshopName,
                     Street = workshop.Street,
-                    HouseNumber = workshop.HouseNumber,
-                    PostalCode = workshop.PostalCode,
-                    CityName = city.Name,
+                    Number = workshop.HouseNumber,
+                    ZipCode = workshop.PostalCode,
+                    City = city.Name,
                     Date = cost.Date,
                     Mileage = cost.Mileage,
                     Price = cost.Price,
@@ -37,11 +35,11 @@ namespace Stn.Homa.Fleet.Api.Projections
                 {
                     Id = cost.Id,
                     Name = cost.Name,
-                    WorkshopName = cost.WorkshopName,
+                    Workshop = cost.WorkshopName,
                     Street = null,
-                    HouseNumber = null,
-                    PostalCode = null,
-                    CityName = null,
+                    Number = null,
+                    ZipCode = null,
+                    City = null,
                     Date = cost.Date,
                     Mileage = cost.Mileage,
                     Price = cost.Price,

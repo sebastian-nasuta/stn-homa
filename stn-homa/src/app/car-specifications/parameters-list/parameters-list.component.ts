@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../../domain/cars/car';
 import { CarService } from '../../domain/cars/car.service';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'stn-parameters-list',

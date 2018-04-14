@@ -1,8 +1,6 @@
 ﻿using Stn.Homa.Ef;
 using Stn.Homa.Fleet.Api.Services;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Stn.Homa.Fleet.Api.Entities;
 using System.Linq;
 
@@ -17,9 +15,12 @@ namespace Stn.Homa.Fleet.Services.Cars
             _dbContext = dbContext;
         }
 
-        public Car Get(string name)
+        public IEnumerable<Car> Get(string name)
         {
-            return _dbContext.Cars.First(item => item.Name == name);
+            if (name == null)
+                return GetAll();
+            else
+                return _dbContext.Cars.Where(item => item.Name == name);
         }
 
         public IEnumerable<Car> GetAll()
