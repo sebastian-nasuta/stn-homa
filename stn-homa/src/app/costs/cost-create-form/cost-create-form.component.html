@@ -22,6 +22,7 @@
               <option>BRAK</option>
               <option *ngFor="let workshop of workshops">{{workshop}}</option>
             </select>
+            <small class="text-danger" *ngIf="costForm.controls['workshop'].touched && costForm.controls['workshop'].hasError('required')">Select from options</small>
           </div>
           <div class="form-group">
             <label for="date">Date</label>

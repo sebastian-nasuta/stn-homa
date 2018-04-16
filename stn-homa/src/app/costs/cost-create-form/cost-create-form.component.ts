@@ -4,6 +4,7 @@ import { CostService } from '../../domain/costs/cost.service';
 import { Cost } from '../../domain/costs/cost';
 import { CarService } from '../../domain/cars/car.service';
 import { Car } from '../../domain/cars/car';
+import { WorkshopService } from '../../domain/workshops/workshop.service';
 
 @Component({
   selector: 'stn-cost-create-form',
@@ -15,12 +16,8 @@ export class CostCreateFormComponent implements OnInit {
   workshops: string[];
   selectedCar: Car[];
 
-  constructor(private costService: CostService, private carService: CarService) {
-    this.workshops = [
-      'właściciel',
-      'warsztat testowy',
-      'inny warsztat testowy'
-    ];
+  constructor(private costService: CostService, private carService: CarService, private workshopService: WorkshopService) {
+    this.workshops = this.workshopService.workshopNames;
     this.selectedCar = this.carService.selectedCar;
   }
 

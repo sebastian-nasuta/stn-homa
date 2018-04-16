@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CostService } from './costs/cost.service';
 import { HttpModule } from '@angular/http';
 import { CarService } from './cars/car.service';
+import { WorkshopService } from './workshops/workshop.service';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { CarService } from './cars/car.service';
   declarations: [],
   providers: [
     CostService,
-    CarService
+    CarService,
+    WorkshopService
   ]
 })
 export class DomainModule { }
