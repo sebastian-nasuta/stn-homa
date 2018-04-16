@@ -37,6 +37,7 @@ namespace Stn.Homa.WebApi
             services.AddTransient<ICostsService, CostsService>();
             services.AddTransient<IWorkshopsService, WorkshopsService>();
             services.AddTransient<ICitiesService, CitiesService>();
+            services.AddTransient<IWorkshopsService, WorkshopsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

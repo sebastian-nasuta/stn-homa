@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarService } from '../domain/cars/car.service';
+import { Car } from '../domain/cars/car';
 
 @Component({
   selector: 'stn-main',
@@ -7,10 +8,14 @@ import { CarService } from '../domain/cars/car.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  car: Car[];
 
-  constructor() { }
+  constructor(private carService: CarService) {
+    this.car = [];
+  }
 
   ngOnInit() {
+    this.car = this.carService.selectedCar;
   }
 
 }

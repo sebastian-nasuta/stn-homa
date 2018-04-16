@@ -6,5 +6,6 @@ namespace Stn.Homa.Fleet.Api.Services
     public interface IWorkshopsService
     {
         IEnumerable<Workshop> GetAll();
+        IEnumerable<string> GetAllNames();
     }
 }

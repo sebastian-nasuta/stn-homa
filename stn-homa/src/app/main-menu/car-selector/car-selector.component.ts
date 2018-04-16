@@ -16,10 +16,10 @@ export class CarSelectorComponent implements OnInit {
   constructor(private carService: CarService, private costService: CostService) { }
 
   ngOnInit() {
+    this.carNames = this.carService.carNames;
     this.carSelect = new FormGroup({
       name: new FormControl('', [], [])
     });
-    this.carNames = this.carService.carNames;
   }
 
   select() {

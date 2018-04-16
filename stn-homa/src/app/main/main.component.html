@@ -6,6 +6,11 @@
 
     <stn-car-selector selector></stn-car-selector>
 
-    <router-outlet></router-outlet>
+    <router-outlet *ngIf="car.length!==0"></router-outlet>
+
+    <div *ngIf="car.length===0">
+        <img src="assets/mustang/mustang.svg" width="300" class="d-inline-block align-top" alt="">
+        <div>Please select car in the upper right corner</div>
+    </div>
 
 </stn-page>

@@ -3,8 +3,6 @@ import { Car } from './car';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { element } from 'protractor';
-import { Observable } from 'rxjs/Observable';
-import { CostService } from '../costs/cost.service';
 
 @Injectable()
 export class CarService {
@@ -39,5 +37,5 @@ export class CarService {
           this.selectedCar.push(element);
         });
       });
-    }
   }
+}
