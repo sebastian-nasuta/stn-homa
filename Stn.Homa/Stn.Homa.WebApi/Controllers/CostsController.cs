@@ -27,5 +27,11 @@ namespace Stn.Homa.WebApi.Controllers
         {
             return _costsService.Get(carName).Select(item => CostProjections.ToSummary(item, _workshopsService.GetAll(), _citiesService.GetAll()));
         }
+
+        [HttpDelete]
+        public void Delete(int id)
+        {
+            _costsService.RemoveCost(id);
+        }
     }
 }

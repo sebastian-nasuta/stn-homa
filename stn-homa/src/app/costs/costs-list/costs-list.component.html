@@ -21,7 +21,7 @@
         <span *ngIf="cost.price;else null_content">{{cost.price}}</span> PLN
       </td>
       <td>
-        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#ModalCenter" (click)="select(cost)">
+        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#CostDetails" (click)="select(cost)">
           Details
         </button>
       </td>
@@ -29,59 +29,6 @@
   </tbody>
 </table>
 
-<ng-template #null_content>-</ng-template>
+<stn-cost-details></stn-cost-details>
 
-<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true" *ngIf="selectedCost">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ModalCenterTitle">{{selectedCost.name}}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="table table-light table-bordered">
-          <tr>
-            <th class="text-right">service</th>
-            <td>
-              <span *ngIf="selectedCost.workshop;else null_content">{{selectedCost.workshop}}</span>
-            </td>
-          </tr>
-          <tr>
-            <th class="text-right">address</th>
-            <td>
-              <span *ngIf="selectedCost.city;else null_content">
-                <span *ngIf="selectedCost.street">{{selectedCost.street}} {{selectedCost.number}}
-                  <br>
-                </span>
-                {{selectedCost.zipCode.toString().substr(0,2)}}-{{selectedCost.zipCode.toString().substr(2,3)}} {{selectedCost.city}}
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th class="text-right">date</th>
-            <td><span *ngIf="selectedCost.date;else null_content">{{selectedCost.date | date : "dd/MM/yyyy"}}</span></td>
-          </tr>
-          <tr>
-            <th class="text-right">mileage</th>
-            <td><span *ngIf="selectedCost.mileage;else null_content">{{selectedCost.mileage}} km</span></td>
-          </tr>
-          <tr>
-            <th class="text-right">price</th>
-            <td><span *ngIf="selectedCost.price;else null_content">{{selectedCost.price}}</span> PLN</td>
-          </tr>
-          <tr>
-            <th class="text-right">comment</th>
-            <td><span *ngIf="selectedCost.comment;else null_content">{{selectedCost.comment}}</span></td>
-          </tr>
-        </table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-warning">Edit</button>
-        <button type="button" class="btn btn-outline-danger">Remove</button>
-      </div>
-    </div>
-  </div>
-</div>
+<ng-template #null_content>-</ng-template>

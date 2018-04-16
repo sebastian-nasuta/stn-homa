@@ -27,5 +27,12 @@ namespace Stn.Homa.Fleet.Services.Costs
         {
             return _dbContext.Costs;
         }
+
+        public void RemoveCost(int idFromQuery)
+        {
+            var cost = new Cost() { Id = idFromQuery };
+            _dbContext.Costs.Remove(cost);
+            _dbContext.SaveChanges();
+        }
     }
 }

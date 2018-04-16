@@ -9,19 +9,11 @@ import { Car } from '../cars/car';
 @Injectable()
 export class CostService {
   costs: Cost[];
+  selectedCost: Cost[];
 
   constructor(private http: Http) {
     this.costs = [];
-    // this.costs = [
-    //   new Cost(
-    //     1, 'Okresowe badanie techniczne', '"MAR-BUS" Handel i Usługi - Marek Ogrodzki',
-    //     'Górnicza', 48, 43502, 'Czechowice-Dziedzice', new Date('2015-10-16'), 109914, 100, null
-    //   ),
-    //   new Cost(
-    //     2, 'Wymiana oleju oraz filtrów powietrza i oleju', null, null, null, null, null,
-    //     new Date('2016-01-14'), 111872, null, 'następny przegląd przy 126000 km'
-    //   )
-    // ];
+    this.selectedCost = [];
   }
 
   loadCosts(name: string) {
@@ -38,8 +30,16 @@ export class CostService {
       });
   }
 
-  getCost(id: number): Cost {
-    return this.costs.find(cost => cost.id === id);
+  selectCost(cost: Cost) {
+    this.selectedCost.length = 0;
+    this.selectedCost.push(cost);
   }
 
+  removeCost(cost: Cost): void {
+    this.http.delete('api/costs', {
+      params: {
+        id: cost.id
+      }
+    }).subscribe();
+  }
 }

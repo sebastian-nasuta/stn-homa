@@ -5,6 +5,7 @@ import { CostsSectionComponent } from './costs-section/costs-section.component';
 import { RouterModule } from '@angular/router';
 import { routes } from '../app.router';
 import { DomainModule } from '../domain/domain.module';
+import { CostDetailsComponent } from './cost-details/cost-details.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { DomainModule } from '../domain/domain.module';
   ],
   declarations: [
     CostsListComponent,
-    CostsSectionComponent
+    CostsSectionComponent,
+    CostDetailsComponent
   ],
   exports: [
     CostsSectionComponent

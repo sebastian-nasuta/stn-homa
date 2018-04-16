@@ -7,5 +7,6 @@ namespace Stn.Homa.Fleet.Api.Services
     {
         IEnumerable<Cost> GetAll();
         IEnumerable<Cost> Get(string name);
+        void RemoveCost(int idFromQuery);
     }
 }

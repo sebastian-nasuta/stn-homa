@@ -9,7 +9,6 @@ import { CostService } from '../../domain/costs/cost.service';
 })
 export class CostsListComponent implements OnInit {
   costs: Cost[];
-  selectedCost: Cost;
 
   constructor(private costService: CostService) {
     this.costs = [];
@@ -20,6 +19,6 @@ export class CostsListComponent implements OnInit {
   }
 
   select(cost: Cost) {
-    this.selectedCost = cost;
+    this.costService.selectCost(cost);
   }
 }
