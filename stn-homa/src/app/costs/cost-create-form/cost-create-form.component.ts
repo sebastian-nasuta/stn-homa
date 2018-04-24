@@ -26,19 +26,18 @@ export class CostCreateFormComponent implements OnInit {
       name: new FormControl('', [Validators.required], []),
       workshop: new FormControl('BRAK', [Validators.required], []),
       date:  new FormControl('', [Validators.required], []),
-      mileage: new FormControl('', [], []),
-      price: new FormControl('', [], []),
-      comment: new FormControl('', [], []),
+      mileage: new FormControl(null, [], []),
+      price: new FormControl(null, [], []),
+      comment: new FormControl(null, [], []),
     });
   }
 
   onFormSubmit(): void {
     const newCost = this.costForm.value as Cost;
     if (newCost.workshop === 'BRAK') {
-      newCost.workshop = null;
+      newCost.workshop = '';
     }
     this.costService.addNewCost(newCost);
-    this.costForm.reset();
     this.costService.loadCosts();
   }
 }

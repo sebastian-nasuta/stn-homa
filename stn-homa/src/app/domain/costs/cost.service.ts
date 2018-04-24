@@ -45,6 +45,7 @@ export class CostService {
   addNewCost(cost: Cost): void {
     this.http.post('api/costs', {}, {
       params: {
+        carName: this.selectedCar[0].name,
         name: cost.name,
         workshop: cost.workshop,
         date: cost.date,
@@ -53,6 +54,7 @@ export class CostService {
         comment: cost.comment
       }
     }).subscribe();
+    this.loadCosts();
   }
 
   removeCost(cost: Cost): void {

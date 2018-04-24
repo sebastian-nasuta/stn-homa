@@ -4,6 +4,7 @@ using Stn.Homa.Fleet.Api.Services;
 using Stn.Homa.Fleet.Api.Dtos;
 using System.Linq;
 using Stn.Homa.Fleet.Api.Projections;
+using System;
 
 namespace Stn.Homa.WebApi.Controllers
 {
@@ -32,6 +33,12 @@ namespace Stn.Homa.WebApi.Controllers
         public void Delete(int id)
         {
             _costsService.RemoveCost(id);
+        }
+
+        [HttpPost]
+        public void Post(string carName, string name, string workshop, DateTime date, double? mileage, decimal? price, string comment)
+        {
+            _costsService.AddNewCost(carName, name, workshop, date, mileage, price, comment);
         }
     }
 }

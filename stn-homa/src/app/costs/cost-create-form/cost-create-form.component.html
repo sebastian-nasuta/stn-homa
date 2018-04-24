@@ -9,7 +9,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form [formGroup]="costForm" novalidate (submit)="onFormSubmit()">
+      <form [formGroup]="costForm" novalidate>
         <div class="modal-body">
           <div class="form-group">
             <label for="name">Name</label>
@@ -44,7 +44,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-outline-success" [disabled]="!costForm.valid">Add cost</button>
+          <button type="button" class="btn btn-outline-success" [disabled]="!costForm.valid" (click)="onFormSubmit()" data-dismiss="modal">Add cost</button>
         </div>
       </form>
     </div>

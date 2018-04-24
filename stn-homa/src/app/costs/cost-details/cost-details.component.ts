@@ -20,6 +20,7 @@ export class CostDetailsComponent implements OnInit {
 
   remove() {
     this.costService.removeCost(this.selectedCost[0]);
+    this.costService.loadCosts();
   }
 
 }
