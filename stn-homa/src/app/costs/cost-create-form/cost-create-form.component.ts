@@ -27,7 +27,7 @@ export class CostCreateFormComponent implements OnInit {
       workshop: new FormControl('BRAK', [Validators.required], []),
       date:  new FormControl('', [Validators.required], []),
       mileage: new FormControl(null, [], []),
-      price: new FormControl(null, [], []),
+      price: new FormControl(null, [Validators.min(0)], []),
       comment: new FormControl(null, [], []),
     });
   }

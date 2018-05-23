@@ -21,4 +21,12 @@ export class CostsListComponent implements OnInit {
   select(cost: Cost) {
     this.costService.selectCost(cost);
   }
+
+  getTotalPrice() {
+    let totalPrice = 0;
+    for (let i = 0; i < this.costs.length; i++) {
+        totalPrice += this.costs[i].price;
+    }
+    return totalPrice;
+  }
 }
