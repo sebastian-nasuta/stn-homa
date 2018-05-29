@@ -182,9 +182,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "E:\\Projects\\stn-homa\\Stn.Homa\\Stn.Homa.Fleet.Api\\Stn.Homa.Fleet.Api.csproj",
       "projectName": "Stn.Homa.Fleet.Api",
@@ -223,7 +220,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.1",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           }
         },
