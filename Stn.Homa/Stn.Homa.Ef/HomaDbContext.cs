@@ -11,6 +11,8 @@ namespace Stn.Homa.Ef
 
         public DbSet<Cost> Costs { get; set; }
 
+        public DbSet<FuelCost> FuelCosts { get; set; }
+
         public DbSet<Workshop> CarServices { get; set; }
 
         public DbSet<City> Cities { get; set; }

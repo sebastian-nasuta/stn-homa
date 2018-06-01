@@ -35,6 +35,7 @@ namespace Stn.Homa.WebApi
             services.AddTransient<ICarModelsService, CarModelsService>();
             services.AddTransient<ICarsService, CarsService>();
             services.AddTransient<ICostsService, CostsService>();
+            services.AddTransient<IFuelCostsService, FuelCostsService>();
             services.AddTransient<IWorkshopsService, WorkshopsService>();
             services.AddTransient<ICitiesService, CitiesService>();
             services.AddTransient<IWorkshopsService, WorkshopsService>();
